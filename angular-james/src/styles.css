@@ -1,0 +1,36 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 30px 60px;
+}
+
+.mat-stepper-vertical {
+  max-width: 430px;
+  margin: 0 auto;
+  box-shadow: -1px 0px 7px 0px rgba(0,0,0,0.33);
+}
+
+.mat-vertical-content-container {
+  position: relative;
+}
+
+.mat-vertical-stepper-header {
+  pointer-events: none;
+}
+
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover {
+  background-color: transparent !important;
+}
+
+.mat-step-header {
+  text-transform: uppercase;
+}
+
+.mat-stepper-vertical-line::before {
+  display: none;
+}

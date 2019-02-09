@@ -1,0 +1,41 @@
+button {
+  position: relative;
+  bottom: -20px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(103, 58, 183, 0.1);
+}
+
+path { fill: none; }
+
+.fa {
+  vertical-align: text-bottom;
+}
+
+.icon {
+  font-size: 80px;
+}
+
+.sub-text {
+  color: rgba(0, 0, 0,.54)
+}
+
+img {
+  margin-top: 15px;
+  width: 200px;
+  height: 260px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.restart {
+  margin-bottom: 20px;
+}

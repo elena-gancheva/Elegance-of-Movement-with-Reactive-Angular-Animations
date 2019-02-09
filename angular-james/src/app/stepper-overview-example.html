@@ -1,0 +1,46 @@
+<h2>How to be like James in 5 steps!</h2>
+<mat-vertical-stepper 
+  [@.disabled]="false"
+  #stepper
+  labelPosition="bottom"
+  (selectionChange)="onSelChange($event)"
+  (animationDone)="animateNext()">
+    <div *ngFor="let step of steps; index as i">
+      <mat-step [state]="step.state">
+        <ng-template matStepLabel>{{ step.label }}</ng-template>
+        <div class="sub-text">{{ step.text }}</div>
+        <span *ngIf="step.icons else image">
+          <span *ngFor="let icon of step.icons" class="icon">{{ icon }}</span>
+        </span>
+        <ng-template #image>
+          <img [src]="step.image" alt="image" />
+        </ng-template>
+        <div class="actions">
+          <button matStepperNext mat-icon-button color="primary" *ngIf="i !== 4 && current === i">
+          <svg viewBox="0 0 512 512" width="30" height="30" [id]="i">
+	<g transform="matrix(6.12323e-17 1 -1 6.12323e-17 512 0)">
+		<g><path d="M365.714,201.143c-30.299,0-54.857,24.558-54.857,54.857s24.558,54.857,54.857,54.857   c30.299,0,54.857-24.558,54.857-54.857S396.014,201.143,365.714,201.143" class="circle"/>
+			<path d="M256,210.286c30.299,0,54.857-24.558,54.857-54.857S286.299,100.571,256,100.571   s-54.857,24.558-54.857,54.857S225.701,210.286,256,210.286" class="circle"/>
+			<path d="M146.286,109.714c30.299,0,54.857-24.558,54.857-54.857S176.585,0,146.286,0   S91.429,24.558,91.429,54.857S115.986,109.714,146.286,109.714" class="circle"/>
+			<path d="M256,301.714c-30.299,0-54.857,24.558-54.857,54.857c0,30.299,24.558,54.857,54.857,54.857   s54.857-24.558,54.857-54.857C310.857,326.272,286.299,301.714,256,301.714" class="circle"/>
+			<path d="M146.286,402.286c-30.299,0-54.857,24.558-54.857,54.857c0,30.299,24.558,54.857,54.857,54.857   s54.857-24.558,54.857-54.857C201.143,426.843,176.585,402.286,146.286,402.286" class="circle"/>
+		</g>
+	</g>
+</svg>
+          </button>
+
+          <button class="restart" mat-icon-button *ngIf="i === 4" (click)="resetStepper()" color="primary">
+            <mat-icon aria-label="Example icon-button with a heart icon">refresh</mat-icon>
+          </button>
+
+        </div>
+      </mat-step>
+    </div>
+
+    <ng-template matStepperIcon="edit">
+      <mat-icon>notes</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="animals">
+      <mat-icon><i class="fa fa-paw"></i></mat-icon>
+    </ng-template>
+</mat-vertical-stepper>
