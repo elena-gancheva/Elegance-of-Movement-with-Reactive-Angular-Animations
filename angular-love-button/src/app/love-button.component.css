@@ -1,0 +1,51 @@
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.love-button {
+  padding: 4px 15px;
+  text-transform: uppercase;
+}
+
+.love-button span {
+  margin-left: 5px;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  background: white;
+}
+
+.eye.right {
+  margin-left: -5px;
+}
+
+.eye-iris {
+  position: absolute;
+  bottom: 12px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 14px;
+  top: 6px;
+  opacity: 0;
+}
+
+svg path {
+  fill: salmon;
+}
