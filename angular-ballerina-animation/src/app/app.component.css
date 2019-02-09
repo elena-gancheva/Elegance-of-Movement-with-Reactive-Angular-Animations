@@ -1,0 +1,37 @@
+.demo-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.mat-stroked-button {
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.animation-wrapper {
+  position: relative;
+  width: 600px;
+  border-radius: 2px;
+  margin: 10px auto;
+  padding: 150px 15px;
+  background: black;
+}
+
+.whole {
+	transform-origin: center center;
+	animation-direction: alternate;
+	transform-style: preserve-3d;
+}
+
+.st0{ display:none; }
+.st1{ opacity:0.4; fill:#EA71AD; }
+.st2{ fill:#E7E5E6; }
+.st3{ fill:#D5B1C5; }
+.st4{ fill:#FFFFFF; }
+.st5{ opacity:0.6; fill:#EAC1DA; }
+.st6{ opacity:0.6; fill:#D4B1C5; }
+.st7{ opacity:0.8; fill:#D4B1C5; }
+.st8{ opacity:0.4; fill:#EAC1DA; }
+.st10{ fill:#D4B1C5; }
+.st11{ fill:#7C1C3E; }
